@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 
 import com.pe.seek.entity.Candidate;
+import com.pe.seek.exception.InternalErrorException;
 import com.pe.seek.repository.CandidateRepository;
 import com.pe.seek.service.CandidateService;
 import com.pe.seek.utility.Function;
@@ -28,13 +29,17 @@ public class CandidateServiceImpl implements CandidateService {
 	@Override
 	public Candidate getCandidateById(Long candidateId) {
 		// TODO Auto-generated method stub
-		Optional<Candidate> optionalCandidate = candidateRepository.findById(candidateId);
-		return optionalCandidate.get();
+		return candidateRepository.findById(candidateId)
+	            .orElseThrow(() -> new InternalErrorException("Candidato con ID " + candidateId + " no encontrado"));
 	}
 
 	@Override
 	public List<Candidate> getAllCandidates() {
 		// TODO Auto-generated method stub
+		List<Candidate> candidateList = candidateRepository.findAll();
+		if (Function.isListNullOrEmpty(candidateList)) {
+			new InternalErrorException("No se encontraron candidatos");
+		}
 		return candidateRepository.findAll();
 	}
 
@@ -54,6 +59,9 @@ public class CandidateServiceImpl implements CandidateService {
 	@Override
 	public void deleteCandidate(Long candidateId) {
 		// TODO Auto-generated method stub
+		candidateRepository.findById(candidateId)
+	            .orElseThrow(() -> new InternalErrorException("No se pudo borrar el registro, candidato con ID " + candidateId + " no encontrado"));
+		
 		candidateRepository.deleteById(candidateId);
 	}
 

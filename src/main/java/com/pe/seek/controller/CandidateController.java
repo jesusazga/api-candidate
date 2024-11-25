@@ -21,7 +21,7 @@ import lombok.AllArgsConstructor;
 
 @RestController
 @AllArgsConstructor
-@Tag(name = "Tipo de Cambio", description = "Operaciones relacionadas con el tipo de cambio")
+@Tag(name = "Candidate", description = "Candidates for job application")
 @RequestMapping("api/candidates")
 public class CandidateController {
 
