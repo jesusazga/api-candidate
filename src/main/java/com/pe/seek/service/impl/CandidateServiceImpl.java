@@ -1,7 +1,6 @@
 package com.pe.seek.service.impl;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -46,7 +45,9 @@ public class CandidateServiceImpl implements CandidateService {
 	@Override
 	public Candidate updateCandidate(Candidate candidate) {
 		// TODO Auto-generated method stub
-		Candidate existingCandidate = candidateRepository.findById(candidate.getId()).get();
+		
+		Candidate existingCandidate = candidateRepository.findById(candidate.getId())
+	            .orElseThrow(() -> new InternalErrorException("No se pudo actualizar el registro, candidato con ID " + candidate.getId() + " no encontrado"));
 		existingCandidate.setName(candidate.getName());
 		existingCandidate.setEmail(candidate.getEmail());
 		existingCandidate.setGender(candidate.getGender());
