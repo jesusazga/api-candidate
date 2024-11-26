@@ -1,0 +1,1 @@
+insert into user (username, password, enabled) values ('testuser', 'password1234', true);
