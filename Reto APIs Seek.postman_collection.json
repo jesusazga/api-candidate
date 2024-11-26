@@ -24,12 +24,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/authenticate",
-							"protocol": "http",
+							"raw": "{{host}}/authenticate",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8080",
 							"path": [
 								"authenticate"
 							]
@@ -50,7 +48,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTczMjU2MTc5NCwiZXhwIjoxNzMyNTYxOTE0fQ.lhjBRuKfVm9eltR6WJtlG6Q8ukKuZtXy2Hu4qId117U",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTczMjU2NTg1MCwiZXhwIjoxNzMyNTY1OTcwfQ.Xe792zdAVgKnru3HSD2ZYHTHxtllqx31h8PBXUVoa34",
 									"type": "string"
 								}
 							]
@@ -58,12 +56,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/candidates",
-							"protocol": "http",
+							"raw": "{{host}}/api/candidates",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"candidates"
@@ -80,7 +76,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTczMjU2NTgyNSwiZXhwIjoxNzMyNTY1OTQ1fQ.xBxHUsZLAtHRThckhr0d2gLx4sAJYlFf2KdUqfUi4WM",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTczMjU2NjgzNSwiZXhwIjoxNzMyNTY2OTU1fQ.elyIADYaDOoeZf18QkS1JOvw7iIw-g0k1k2X3_xrBXs",
 									"type": "string"
 								}
 							]
@@ -88,16 +84,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/candidates/7",
-							"protocol": "http",
+							"raw": "{{host}}/api/candidates/2",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"candidates",
-								"7"
+								"2"
 							]
 						}
 					},
@@ -128,12 +122,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/candidates",
-							"protocol": "http",
+							"raw": "{{host}}/api/candidates",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"candidates"
@@ -167,12 +159,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/candidates/2",
-							"protocol": "http",
+							"raw": "{{host}}/api/candidates/2",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"candidates",
@@ -207,12 +197,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/candidates/6",
-							"protocol": "http",
+							"raw": "{{host}}/api/candidates/6",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"candidates",
@@ -275,12 +263,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/candidates/77",
-							"protocol": "http",
+							"raw": "{{host}}/api/candidates/77",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"candidates",
@@ -315,12 +301,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/candidates",
-							"protocol": "http",
+							"raw": "{{host}}/api/candidates",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"candidates"
@@ -337,7 +321,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTczMjU2NzMzMSwiZXhwIjoxNzMyNTY3NDUxfQ.0X-I0HJuQ_i2aJgpfY8yGvHdLUHxZulcWicnOwX0q2Y",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTczMjYwODg5MSwiZXhwIjoxNzMyNjA5MDExfQ.8TiRHXRhaN-xstTVLNLOpfzvPe7BJiT2u6xUm1WW4wQ",
 									"type": "string"
 								}
 							]
@@ -354,16 +338,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/candidates/2",
-							"protocol": "http",
+							"raw": "{{host}}/api/candidates/19",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"candidates",
-								"2"
+								"19"
 							]
 						}
 					},
@@ -394,12 +376,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/candidates/17",
-							"protocol": "http",
+							"raw": "{{host}}/api/candidates/17",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
 								"candidates",
@@ -410,6 +390,40 @@
 					"response": []
 				}
 			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "https://api-candidate-d6ca27047d56.herokuapp.com",
+			"type": "string"
+		},
+		{
+			"value": "",
+			"type": "string",
+			"disabled": true
 		}
 	]
 }
